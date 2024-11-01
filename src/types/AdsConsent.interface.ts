@@ -156,6 +156,8 @@ export interface AdsConsentInterface {
    */
   getPurposeConsents(): Promise<string>;
 
+  getPurposeLegitimateInterests(): Promise<string>;
+
   /**
    * Provides information about a user's consent choices.
    *
@@ -407,3 +409,5 @@ export interface AdsConsentUserChoices {
    */
   usePreciseGeolocationData: boolean;
 }
+
+interface AdsLegitimateInterestUserChoices extends AdsConsentUserChoices {}
