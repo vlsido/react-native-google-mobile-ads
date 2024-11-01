@@ -114,7 +114,7 @@ export const AdsConsent: AdsConsentInterface = {
 
   getPurposeLegitimateInterests(): Promise<string> {
     return native.getPurposeLegitimateInterests();
-  }
+  },
 
   async getUserChoices(): Promise<AdsConsentUserChoices> {
     const tcString = await native.getTCString();
