@@ -410,4 +410,4 @@ export interface AdsConsentUserChoices {
   usePreciseGeolocationData: boolean;
 }
 
-interface AdsLegitimateInterestUserChoices extends AdsConsentUserChoices {}
+export interface AdsLegitimateInterestUserChoices extends AdsConsentUserChoices {}
